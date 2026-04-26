@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mysql -u root -e \"SHOW DATABASES;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root -e \"SHOW DATABASES;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root -e \"SHOW TABLES FROM smartuae;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae -e \"DROP TABLE IF EXISTS sliders;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae -e ':*)",
+      "Bash(ls /c/xampp/mysql/data/smartuae/sliders*)",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae -e \"SELECT * FROM sliders;\")",
+      "Bash(ls /c/xampp/mysql/data/smartuae/*.frm)",
+      "Bash(ls /c/xampp/mysql/data/smartuae/*.ibd)",
+      "Bash(/c/xampp/mysql/bin/mysql -u root -e \"DROP DATABASE smartuae; CREATE DATABASE smartuae CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root -e \"DROP DATABASE IF EXISTS smartuae; CREATE DATABASE smartuae CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae)",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae -e \"SELECT id, name, icon FROM main_categories;\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae -e \"SHOW CREATE TABLE main_categories\\\\G\")",
+      "Bash(/c/xampp/mysql/bin/mysql -u root smartuae -e \"SELECT id, name, icon FROM business_categories LIMIT 10;\")",
+      "Bash(curl -s \"http://localhost/smatweb/\")",
+      "Bash(curl -s -I \"http://localhost/smatweb/\")"
+    ],
+    "additionalDirectories": [
+      "C:\\xampp\\mysql\\data\\smartuae"
+    ]
+  }
+}

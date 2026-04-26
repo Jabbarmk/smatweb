@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npx next:*)",
+      "Bash(mkdir -p \"/c/xampp/htdocs/smtw-next/app/offline-projects/[id]\")",
+      "Bash(mkdir -p \"/c/xampp/htdocs/smtw-next/app/real-estate-players/[id]\")",
+      "Bash(findstr \":3306\")",
+      "PowerShell(netstat -ano)",
+      "Bash(cp \"c:/xampp/mysql/data/mysql/db.MAD\" \"c:/xampp/mysql/data/mysql/db.MAD.bak\")",
+      "Bash(cp \"c:/xampp/mysql/data/mysql/db.MAI\" \"c:/xampp/mysql/data/mysql/db.MAI.bak\")",
+      "Bash(\"c:/xampp/mysql/bin/aria_chk.exe\" -r -f \"c:/xampp/mysql/data/mysql/db\")",
+      "Bash(\"c:/xampp/mysql/bin/aria_chk.exe\" -r -f \"mysql/db\")",
+      "PowerShell(Start-Process -FilePath \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" -ArgumentList \"--skip-grant-tables\",\"--skip-networking\",\"--console\" -WindowStyle Hidden -PassThru)",
+      "Bash(\"c:/xampp/mysql/bin/mysql.exe\" -u root --connect-timeout=5 -e \"SELECT 1\")",
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell(Start-Process -FilePath \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" -ArgumentList \"--skip-grant-tables\",\"--console\" -WindowStyle Hidden)",
+      "Bash(\"c:/xampp/mysql/bin/mysql.exe\" -u root -h 127.0.0.1 --connect-timeout=10 -e \"SELECT 1;\")",
+      "Bash(\"c:/xampp/mysql/bin/mysql_upgrade.exe\" -u root -h 127.0.0.1 --force)",
+      "Bash(\"c:/xampp/mysql/bin/mysql.exe\" -u root -h 127.0.0.1 --connect-timeout=10 mysql)",
+      "Bash(\"c:/xampp/mysql/bin/mysql.exe\" -u root -h 127.0.0.1 --connect-timeout=10 mysql -e \"SELECT 1;\")",
+      "Bash(\"c:/xampp/mysql/bin/mysql.exe\" -u root -h 127.0.0.1 mysql)",
+      "PowerShell(Start-Process -FilePath \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysqld.exe\" -ArgumentList \"--defaults-file=C:\\\\xampp\\\\mysql\\\\bin\\\\my.ini\",\"--standalone\" -WindowStyle Hidden)",
+      "Bash(\"c:/xampp/mysql/bin/mysql.exe\" -u root -h 127.0.0.1 --connect-timeout=10 -e \"SHOW DATABASES;\")"
+    ],
+    "additionalDirectories": [
+      "c:\\xampp\\htdocs\\smtw-next\\app",
+      "c:\\xampp\\htdocs\\smtw-next\\components\\classifieds",
+      "c:\\xampp\\mysql\\data\\mysql"
+    ]
+  }
+}
