@@ -1,7 +1,0 @@
-RewriteEngine On
-
-# Pretty URLs for pages
-RewriteRule ^page/([a-z0-9-]+)$ pages/page.php?slug=$1 [L,QSA]
-
-# Block access to includes directory
-RewriteRule ^includes/ - [F,L]

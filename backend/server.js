@@ -176,7 +176,7 @@ createAdminCrudRoutes('sliders', 'sliders', ['title','subtitle','button_text','b
 createAdminCrudRoutes('main-categories', 'main_categories', ['name','icon','link','sort_order','is_active']);
 createAdminCrudRoutes('popular-categories', 'popular_categories', ['name','image','link','sort_order','is_active']);
 createAdminCrudRoutes('business-categories', 'business_categories', ['name','icon','group_name','sort_order','is_active']);
-createAdminCrudRoutes('businesses', 'businesses', ['name','category_id','description','image','rating','distance','address','phone','whatsapp','is_active']);
+createAdminCrudRoutes('businesses', 'businesses', ['name','category_id','description','image','rating','distance','address','phone','whatsapp','opening_time','closing_time','is_24hr','is_active']);
 createAdminCrudRoutes('classified-categories', 'classified_categories', ['name','icon','sort_order','is_active']);
 createAdminCrudRoutes('classified-sections', 'classified_sections', ['name','sort_order','is_active']);
 createAdminCrudRoutes('classifieds', 'classifieds', ['title','description','price','currency','category_id','section_id','image','location','age','model','warranty','color','brand','condition_status','version','storage','memory','battery_health','accompaniments','carrier_lock','is_active']);
